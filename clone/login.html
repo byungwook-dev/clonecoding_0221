@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./wantedFont.css">
+    <title>로그인</title>
+    <link data-vue-meta="1" rel="shortcut icon" href="https://assets.cdn.soomgo.com/icons/logo/favicon_logo.svg">
+</head>
+<body class="log_in" style="overflow-y: visible;">
+<div id="app"> 
+    <div id="log_body">
+        <div class="log_main">
+            <h2><strong>로그인</strong></h2>
+            <div class="log_ctn">
+                <form action="">
+                    <div class="form_down form_log">
+                        <div class="colon">
+                            <fieldset class="group" id="one">
+                                <legend class="ring fm_label fm_pt" id="one_label">이메일</legend>
+                                <div>
+                                    <input type="email" placeholder="example@soomgo.com" 
+                                    class="in_text control is_deny deny" id="two" required>
+                                    <!-- <div class="feedback">이메일 주소를 입력해주세요</div> -->
+                                </div>
+                            </fieldset>    
+                        </div>
+                        <div class="colon">
+                            <fieldset class="group pw" id="three">
+                                <legend class="ring fm_label fm_pt" id="three_label">비밀번호</legend>
+                                <div>
+                                    <input type="password" placeholder="비밀번호를 입력해주세요."
+                                    class="in_text control correct" id="four" required>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="colon">
+                            <button type="submit" class="btn btn_log btn_main">
+                                <span>이메일 로그인</span>
+                                <span style="display: none;">
+                                    <div>
+                                        <div class="indic" style="width: 24px; height: 24px; border-width: 0.25rem; border-style: solid; 
+                                        border-color: rgb(255, 255, 255) rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2); border-image: initial;"></div>
+                                        <p style="display: none;"></p>
+                                    </div>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="restart_wrap colon">
+                            <div>
+                                <a href="">이메일 찾기</a>
+                                <div class="ln"></div>
+                                <a href="">비밀번호 찾기</a>
+                                <div class="ln"></div>
+                                <a href="">회원가입</a>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="colon">
+                            <button type="button" class="btn btn_kakao btn_scnd">
+                                <img src="https://assets.cdn.soomgo.com/icons/icon-login-kakaotalk-btn.svg" alt="카카오 로그인">
+                                <span style="color: black;">카카오로 시작</span>
+                            </button>
+                        </div>
+                        <div class="colon">
+                            <button type="button" class="btn btn_naver btn_scnd">
+                                <img src="https://assets.cdn.soomgo.com/icons/icon-login-naver-btn.svg">
+                                <span>네이버로 시작</span>
+                            </button>
+                        </div>
+                        <div class="colon">
+                            <button type="button" class="btn btn_fb btn_scnd">
+                                <img src="https://assets.cdn.soomgo.com/icons/icon-login-facebook-btn.svg">
+                                <span>페이스북으로 시작</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--  -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+<!-- id는 BVID_75를 기준으로 ONE TWO -->
