@@ -507,3 +507,53 @@ img{
     filter: brightness(0.9);
 }
 
+
+.form_log .in-text.deny{
+    border: 0.0625rem solid #fa5963;
+}
+
+.form_log .in_text{
+    padding: 0.75rem;
+    border-radius: 4px;
+}
+
+.control.is_deny{
+    background-image: none;
+}
+
+input[type="email" i] {
+    padding-block: 1px;
+    padding-inline: 2px;
+}
+
+.is_deny~.feedback{
+    display: none;
+}
+
+.feedback{
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #fa5963;
+}
+
+.group .wrong.wrong_type{
+    color: #ff3131;
+}
+
+.wrong{
+    display: none;
+    margin-top: 0.25rem;
+}
+
+small{
+    font-size: 80%;
+    font-weight: 400;
+}
+.feedback{
+    display: none;
+}
+
+.wrong_type{
+    display: none;
+}
