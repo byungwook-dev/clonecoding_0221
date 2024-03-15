@@ -1972,26 +1972,9 @@ hr{
     transition: 0.5s;
 }
 
-
-
-
-
 /* button.cruz_nav_lt:disabled{
     color: rgba(55, 56, 60, .16);
 } */
-
-/* SvgIcon_SvgIcon__root__svg__DKYBi 중복된다 - svgicon-rel  */
-/* SvgIcon_SvgIcon__root__8vwon - svgicon 클래스이름 중복된다 */
-/* <button class="Button_Button__root__V1ie3 Button_Button__outlined__H2mkd Button_Button__outlinedAssistive__mBcQK Button_Button__outlinedSizeSmall__JJmOo Aside_signUpButton__pY721" type="button" data-attribute-id="gnb" data-gnb-kind="signupLogin"><span class="Button_Button__label__1Kk0v"><span class="Typography_Typography__root__xYuMs Typography_Typography__label2__BRssq Typography_Typography__weightBold__e15ql">회원가입/로그인</span></span><span class="Button_Button__interaction__kkYaa"> 중복된다 이거는 돋보기 아이콘 영역 */
-/* Button_Button__label__1Kk0v 중복된다 - btn_lab */
-/* typography 중복 */
-/* Button_Button__interaction__kkYaa - btn_inter */
-
-/* typo_bold =  Typography_Typography__weightBold__e15ql  */
-/*  Typography_Typography__title3_weightBold_G6RZI는 새로나온것 슬라이드에서 */
-/* Typography_Typography__root__xYuMs Typography_Typography__title3__IFj7F  - 확인하기*/
-/* gird_flex 중복 */
 /* 443코드 질문 원래는 116px이다 */
 /* 317코드 원래는 var인데 171719로 붙임 */
 /* 371코드 다시보기 */
-/* grid_wrapper = Grid_Grid_wrap_nowrap__4r_cp */

@@ -400,7 +400,7 @@
                                 <div>
                                     <input type="email" name="email" placeholder="example@soomgo.com" 
                                     class="in_text control is_deny deny" id="two" oninput="checkEmail()" onblur="resetStyles(this)">
-                                     <div class="feedback wrong_type" id="plz">이메일 주소를 입력해주세요</div>
+                                     <div class="feedback wrong_type" id="plz">이메일 주소를 입력해주세요.</div>
                                 </div>
                             </fieldset>    
                         </div>
@@ -417,7 +417,8 @@
                             </fieldset>
                         </div>
                         <div class="colon">
-                            <button type="submit" class="btn btn_log btn_main" onclick="window.open('http://127.0.0.1:5500/clone/wanted.html')">
+                            <button type="submit" class="btn btn_log btn_main"> 
+                                <!-- onclick="window.open('./wanted.html')"일부러 생략 유효성검사에 더 중점을 뒀다 -->
                                 <span>이메일 로그인</span>
                                 <span style="display: none;">
                                     <div>
@@ -808,5 +809,3 @@
 </footer>
 </body>
 </html>
-
-<!-- id는 BVID_75를 기준으로 ONE TWO -->

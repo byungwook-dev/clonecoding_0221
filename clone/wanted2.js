@@ -7,45 +7,60 @@
 // 슬라이드 이미지 너비
 // 360px;
 
+// let slide = 0;
+
+// 왼쪽 이동 버튼
+// $(".cruz_nav_lt").on("click", function(){
+//     if(slide==5){
+//         $(".tag_card_ctn").css("transform", "translateX(360px)");
+//         slide = 4;
+//     }else if(slide==4){
+//         $(".tag_card_ctn").css("transform", "translateX(360px)");
+//         slide = 3;
+//     }else if(slide==3){
+//         $(".tag_card_ctn").css("transform", "translateX(360px)");
+//         slide = 2;
+//     }else if(slide==2){
+//         $(".tag_card_ctn").css("transform", "translateX(360px)");
+//         slide = 1;
+//     }else if(slide==1){
+//         $(".tag_card_ctn").css("transform", "translateX(360px)");
+//         slide = 0;
+//     }
+// });
+
+// 오른쪽 이동 버튼
+// $(".cruz_nav_rt").on("click", function(){
+//     if(slide==0){
+//         $(".tag_card_ctn").css("transform", "translateX(-360px)");
+//         slide = 1;
+//     }else if(slide==1){
+//         $(".tag_card_ctn").css("transform", "translateX(-720px)");
+//         slide = 2;
+//     }else if(slide==2){
+//         $(".tag_card_ctn").css("transform", "translateX(-1080px)");
+//         slide = 3;
+//     }else if(slide==3){
+//         $(".tag_card_ctn").css("transform", "translateX(-1440px)");
+//         slide = 4;
+//     }else if(slide==4){
+//         $(".tag_card_ctn").css("transform", "translateX(-1800px)");
+//         slide = 5;
+//     }
+// });
+
 let slide = 0;
 
 // 왼쪽 이동 버튼
 $(".cruz_nav_lt").on("click", function(){
-    if(slide==5){
-        $(".tag_card_ctn").css("transform", "translateX(360px)");
-        slide = 4;
-    }else if(slide==4){
-        $(".tag_card_ctn").css("transform", "translateX(360px)");
-        slide = 3;
-    }else if(slide==3){
-        $(".tag_card_ctn").css("transform", "translateX(360px)");
-        slide = 2;
-    }else if(slide==2){
-        $(".tag_card_ctn").css("transform", "translateX(360px)");
-        slide = 1;
-    }else if(slide==1){
-        $(".tag_card_ctn").css("transform", "translateX(360px)");
-        slide = 0;
-    }
+    slide = Math.max(0, slide - 1);
+    let distance = -360 * slide;
+    $(".tag_card_ctn").css("transform", `translateX(${distance}px)`);
 });
 
 // 오른쪽 이동 버튼
 $(".cruz_nav_rt").on("click", function(){
-    if(slide==0){
-        $(".tag_card_ctn").css("transform", "translateX(-360px)");
-        slide = 1;
-    }else if(slide==1){
-        $(".tag_card_ctn").css("transform", "translateX(-720px)");
-        slide = 2;
-    }else if(slide==2){
-        $(".tag_card_ctn").css("transform", "translateX(-1080px)");
-        slide = 3;
-    }else if(slide==3){
-        $(".tag_card_ctn").css("transform", "translateX(-1440px)");
-        slide = 4;
-    }else if(slide==4){
-        $(".tag_card_ctn").css("transform", "translateX(-1800px)");
-        slide = 5;
-    }
+    slide = Math.min(5, slide + 1);
+    let distance = -360 * slide;
+    $(".tag_card_ctn").css("transform", `translateX(${distance}px)`);
 });
-
